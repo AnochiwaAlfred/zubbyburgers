@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chomp</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- NAV SECTION ********************************************************************************** -->
+
+    <nav class="nav full-width">
+        <div class="nav-top full-width">
+            We're open and available for takeaway & delivery. <a href="order.html" class="bolder">Order Now</a>
+        </div>
+        <div class="nav-bottom full-width flex">
+            <div class="eighty nav-bottom_inner flex">
+                <div class="nav-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                        class="animate__animated animate__infinite animate__tada animate__slower">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M232 464h-40.01v-117.3c68.51-15.88 118-79.86 111.4-154.1L287.5 14.5C286.8 6.25 279.9 0 271.8 0H48.23C40.1 0 33.22 6.25 32.47 14.5L16.6 192.6c-6.626 74.25 42.88 138.2 111.4 154.2V464H87.98c-22.13 0-40.01 17.88-40.01 40c0 4.375 3.626 8 8.002 8h208c4.376 0 8.002-3.625 8.002-8C272 481.9 254.1 464 232 464zM77.72 48h164.6L249.4 128H70.58L77.72 48z" />
+                    </svg>
+                </div>
+
+                <ul class="nav-links flex" id="nav-links">
+                    <a href="#">
+                        <li class="nav-links_item active">Home</li>
+                    </a>
+                    <a href="order.html">
+                        <li class="nav-links_item">Order</li>
+                    </a>
+                    <a href="company.html">
+                        <li class="nav-links_item">Company</li>
+                    </a>
+                    <a href="faq.html">
+                        <li class="nav-links_item">FAQ</li>
+                    </a>
+                    <a href="#contact">
+                        <li class="nav-links_item">Contact</li>
+                    </a>
+                </ul>
+                <a href="order.html">
+                    <div class="nav-svg cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                            <path
+                                d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z" />
+                        </svg>
+                    </div>
+                </a>
+                <button class="toggle" id="nav-toggle" onclick="navToggle()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <!-- HEADER SECTION ********************************************************************************** -->
+
+    <header class="colored-bg-grad full-width">
+        <header class="header eighty flex">
+            <div class="header-inner">
+                <h1>Beautiful food & takeaway, <span class="colored">delivered</span> to your door.</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                </p>
+                <p class="header-btn">
+                    <a href="#" class="btn btn-lg">Place an Order</a>
+                </p>
+                <h5>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M381.2 150.3L524.9 171.5C536.8 173.2 546.8 181.6 550.6 193.1C554.4 204.7 551.3 217.3 542.7 225.9L438.5 328.1L463.1 474.7C465.1 486.7 460.2 498.9 450.2 506C440.3 513.1 427.2 514 416.5 508.3L288.1 439.8L159.8 508.3C149 514 135.9 513.1 126 506C116.1 498.9 111.1 486.7 113.2 474.7L137.8 328.1L33.58 225.9C24.97 217.3 21.91 204.7 25.69 193.1C29.46 181.6 39.43 173.2 51.42 171.5L195 150.3L259.4 17.97C264.7 6.954 275.9-.0391 288.1-.0391C300.4-.0391 311.6 6.954 316.9 17.97L381.2 150.3z" />
+                    </svg>
+                    Trustpilot
+                </h5>
+                <p><span class="colored">4.8 out of 5</span> based on 2000+ reviews</p>
+            </div>
+            <div class="header-inner header-inner_img">
+
+            </div>
+        </header>
+    </header>
+
+
+
+
+    <!-- FRESH PRODUCTS SECTION ********************************************************************************** -->
+
+
+    <section class="fresh full-width colored-bg">
+        <div class="eighty flex">
+            <div class="fresh-inner f-inner_1">
+                <h1 class="colored">The home of fresh products</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                </p>
+                <button href="#" class="btn btn-lg">Learn about us</button>
+            </div>
+            <div class="fresh-inner f-inner_img"></div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- HOW IT WORKS SECTION ********************************************************************************** -->
+
+    <section class="how-it-works full-width">
+
+        <h1 class="colored">How it works.</h1>
+        <div class="flex eighty how-it-works_inner">
+            <div class="how-it-works_card">
+                <div class="card_img">
+                    <img src="images/5e865e09d8efa3dc2276b60f_Step 01.png" alt="">
+                </div>
+                <h4>Adapt your menu items</h4>
+                <p>Easily adapt your menu using the webflow CMS and allow customers to browse your items.</p>
+            </div>
+
+            <div class="how-it-works_card">
+                <div class="card_img">
+                    <img src="images/5e865e09d8efa3e5bf76b60e_Step 02.png" alt="">
+                </div>
+                <h4>Accept online orders & takeout</h4>
+                <p>Let your customers order and pay via the powerful ecommerce system, or simply let them call your
+                    store.</p>
+            </div>
+
+            <div class="how-it-works_card">
+                <div class="card_img">
+                    <img src="images/5e865e09d8efa3001a76b610_Step 03.png" alt="">
+                </div>
+                <h4>Manage delivery or takeout</h4>
+                <p>Manage your own logistics and take orders simply through the ecommerce system.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- BROWSE OUR MENU SECTION ********************************************************************************** -->
+
+    <section class="browse full-width colored-bg">
+        <h1 class="colored">Browse our menu</h1>
+        <p class="browse-parag">Use our menu to pick an order online, or <a href="#" class="colored">phone</a> our store
+            to place a pickup order. Fast and fresh food</p>
+
+        <div class="browse-buttons">
+            <button class="js-btn active-btn" id="burgers-btn" onclick="burgersBtn()">Burgers</button>
+            <button class="js-btn btn-brws" id="sides-btn" onclick="sidesBtn()">Sides</button>
+            <button class="js-btn btn-brws" id="drinks-btn" onclick="drinksBtn()">Drinks</button>
+        </div>
+
+
+
+
+
+
+        <div class="browse-cards active" id="burgers">
+            <div class="browse-cards_row">
+                <div class="browse-cards_col flex">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa3676276b5cd_Burger 03.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>Burger Dreams</h4>
+                            <p class="colored">$ 9.20 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse-cards_col flex">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa3b2e676b5b5_Burger 08.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>Burger Waldo</h4>
+                            <p class="colored">$ 10.00 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="browse-cards_row">
+                <div class="browse-cards_col flex">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa36d8576b5b4_Burger 04.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>Burger Cali</h4>
+                            <p class="colored">$ 8.00 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse-cards_col flex">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa3650476b5b3_Burger 06.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>Burger Bacon Buddy</h4>
+                            <p class="colored">$ 9.99 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="browse-cards_row">
+                <div class="browse-cards_col flex">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa33f0276b5b2_Burger 02.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>Burger Spicy</h4>
+                            <p class="colored">$ 9.20 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse-cards_col flex ">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa343f176b5b1_Burger 01.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>Burger Classic</h4>
+                            <p class="colored">$ 8.00 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="browse-cards" id="sides">
+            <div class="browse-cards_row">
+                <div class="browse-cards_col flex">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa33ebb76b5f5_Side 03.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>French Fries</h4>
+                            <p class="colored">$ 9.20 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse-cards_col flex">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa352fc76b5e1_Side 02.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>Chips</h4>
+                            <p class="colored">$ 10.00 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="browse-cards_row">
+                <div class="browse-cards_col flex">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa30d7276b5ac_Side 06.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>Vegetable Salad</h4>
+                            <p class="colored">$ 9.20 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="browse-cards_col flex">
+                    <div class="card_img2">
+                        <img src="images/5e865e09d8efa360e276b609_Side 05.png" alt="">
+                    </div>
+                    <div class="card_text">
+                        <div class="card_text_head flex">
+                            <h4>Sandwich</h4>
+                            <p class="colored">$ 10.00 USD</p>
+                        </div>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <div class="card_btns">
+                            <button class="card-counter-button">1</button>
+                            <a href="#" class="btn btn-sm">Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+
+
+            <div class="browse-cards" id="drinks">
+                <div class="browse-cards_row">
+                    <div class="browse-cards_col flex">
+                        <div class="card_img2">
+                            <img src="images/5e865e09d8efa30dc176b5af_Drink 2.png" alt="">
+                        </div>
+                        <div class="card_text">
+                            <div class="card_text_head flex">
+                                <h4>Scotch</h4>
+                                <p class="colored">$ 8.00 USD</p>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="card_btns">
+                                <button class="card-counter-button">1</button>
+                                <a href="#" class="btn btn-sm">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="browse-cards_col flex">
+                        <div class="card_img2">
+                            <img src="images/5e865e09d8efa3409976b5b0_Drink 1.png" alt="">
+                        </div>
+                        <div class="card_text">
+                            <div class="card_text_head flex">
+                                <h4>Mint Tea</h4>
+                                <p class="colored">$ 9.99 USD</p>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="card_btns">
+                                <button class="card-counter-button">1</button>
+                                <a href="#" class="btn btn-sm">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="browse-cards_row">
+                    <div class="browse-cards_col flex">
+                        <div class="card_img2">
+                            <img src="images/5e865e09d8efa3145f76b5ad_Drink 3.png" alt="">
+                        </div>
+                        <div class="card_text">
+                            <div class="card_text_head flex">
+                                <h4>Iced Tea</h4>
+                                <p class="colored">$ 9.20 USD</p>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="card_btns">
+                                <button class="card-counter-button">1</button>
+                                <a href="#" class="btn btn-sm">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="browse-cards_col flex">
+                        <div class="card_img2">
+                            <img src="images/5e865e09d8efa3f65176b5ae_Drink 4.png" alt="">
+                        </div>
+                        <div class="card_text">
+                            <div class="card_text_head flex">
+                                <h4>Lime Water</h4>
+                                <p class="colored">$ 10.00 USD</p>
+                            </div>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="card_btns">
+                                <button class="card-counter-button">1</button>
+                                <a href="#" class="btn btn-sm">Add To Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="btn-brws2">
+                <a href="#" class="btn btn-lg">See Full Menu</a>
+            </div>
+    </section>
+
+
+
+
+
+    <!-- ORDER ONLINE SECTION ********************************************************************************** -->
+
+    <section class="order full-width flex">
+        <div class="order-inner-con flex">
+            <div class="order-inner order-inner_img order1"></div>
+
+            <div class="order-inner_text">
+                <h1 class="colored">Order online with our simple checkout.</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                </p>
+                <div class="order-btn">
+                    <a href="faq.html" class="btn btn-lg">See our FAQ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- CONTACT TO ORDER SECTION ********************************************************************************** -->
+
+
+    <section class="order full-width flex colored-bg" id="contact">
+        <div class="order-inner-con flex">
+            <div class="order-inner_text">
+                <h1 class="colored">Call our store and takeaway when it suits you best.</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+                </p>
+                <div class="order-btn">
+                    <a href="tel:+2348166646601" class="btn btn-lg">Ph. +2348166646601</a>
+                </div>
+            </div>
+            <div class="order-inner order-inner_img order2"></div>
+        </div>
+    </section>
+
+
+
+
+    <!-- SUPPORT SECTION ********************************************************************************** -->
+
+
+    <section class="support full-width flex">
+        <div class="support-img"></div>
+        <div class="support-text">
+            <h1><span class="colored2">Support</span> good food and local business.</h1>
+            <div class="btn-brws3">
+                <a href="order.html" class="btn-support btn-lg">Order Now</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- FOOTER SECTION ********************************************************************************** -->
+
+
+    <footer class="footer colored-bg">
+        <div class="footer-top flex eighty">
+            <div class="footer-top_left">
+                <div class="nav-icon nav-svg full-width fp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M232 464h-40.01v-117.3c68.51-15.88 118-79.86 111.4-154.1L287.5 14.5C286.8 6.25 279.9 0 271.8 0H48.23C40.1 0 33.22 6.25 32.47 14.5L16.6 192.6c-6.626 74.25 42.88 138.2 111.4 154.2V464H87.98c-22.13 0-40.01 17.88-40.01 40c0 4.375 3.626 8 8.002 8h208c4.376 0 8.002-3.625 8.002-8C272 481.9 254.1 464 232 464zM77.72 48h164.6L249.4 128H70.58L77.72 48z" />
+                    </svg>
+                </div>
+                <p>Takeaway & Delivery template for small, medium businesses.</p>
+            </div>
+            <div class="footer-top_right">
+                <ul class="footer-links">
+                    <li class="link-head">COMPANY</li>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="order.html">
+                        <li>Order</li>
+                    </a>
+                    <a href="faq.html">
+                        <li>FAQ</li>
+                    </a>
+                    <a href="#contact">
+                        <li>Contact</li>
+                    </a>
+                </ul>
+                <ul class="footer-links">
+                    <li class="link-head">TEMPLATE</li>
+                    <a href="#">
+                        <li>Style Guide</li>
+                    </a>
+                    <a href="#">
+                        <li>Changelog</li>
+                    </a>
+                    <a href="#">
+                        <li>License</li>
+                    </a>
+                    <a href="#">
+                        <li>Webflow University</li>
+                    </a>
+                </ul>
+                <ul class="footer-links">
+                    <li class="link-head">FLOWBASE</li>
+                    <a href="#">
+                        <li>More Clonables</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom eighty">
+            <div class="footer-bottom_left">
+                Built by <a href="#" class="colored">Flowbase</a> | Powered by <a href="#" class="colored">Webflow</a>
+            </div>
+            <div class="footer-bottom_right">
+                <a href="#" class="footer-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                    </svg>
+                </a>
+                <a href="#" class="footer-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                    </svg>
+                </a>
+                <a href="#" class="footer-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path
+                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="js/external.js"></script>
+</body>
+
+</html>
