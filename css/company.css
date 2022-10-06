@@ -1,0 +1,80 @@
+
+.title{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.menu-counter{
+	border: 1px solid white;
+	height: fit-content;
+	background: url(../images/5e865e09d8efa3f65176b5ae_Drink\ 4.png) center;
+	background-size: inherit;
+}
+
+.counter-row{
+	margin: 60px auto;
+}
+
+.counter-row-rc, .counter-col{
+	width: 50%;
+	margin-top: 0px auto;
+	text-align: center;
+}
+
+.counter-col h1{
+	color: #32a3c0;
+}
+
+
+
+
+@media screen and (min-width:426px) and (max-width:768px) {
+	.counter-row{
+		display: flex;
+		width: 100%;
+	}
+
+	.counter-row-rc{
+		text-align: center;
+	}
+
+	.counter-col{
+		margin: 20px auto;
+
+	}
+
+
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width:100px) and (max-width:425px) {
+	.counter-row, .counter-row-rc{
+		display: block;
+	}
+
+	.counter-row{
+		width: 100%;
+		display: flex;
+		margin: 10px auto;
+	}
+
+	.counter-row-rc{
+		text-align: center;
+	}
+
+	.counter-col{
+		margin: 30px auto;
+
+	}
+
+	
+
+
+
+}
